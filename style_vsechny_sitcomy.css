@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #9d20ad);
+    outline-color: #000000;
+    color: #333;
+}
+
+.hlavicka-container{
+    display: flex; /* Aktivuje flexbox layout pro daný prvek. */
+    flex-direction: row; /* Nastavuje směr hlavní osy na řádek . */
+    flex-wrap: nowrap; /* Určuje, že položky se nebudou zalamovat na nový řádek. */
+    justify-content: normal; /* Upraveno zarovnání položek podél hlavní osy. */
+    align-items: center; /* Zarovnává položky podél příčné osy. */
+    align-content: normal; /* Upraveno zarovnání více řádků uvnitř kontejneru. 'Normal' bude interpretováno kontextově. */
+    height: 200px; /* Nastavuje výšku kontejneru. */
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    align-self: center;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.hlavicka {
+    max-width: 50%;
+    height: 200px;
+    padding-top: 180px;
+    margin: 0 auto;
+    align-items: center;
+    display: block;
+}
+
+
+
+.menu label {
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+
+.menu input[type="text"] {
+    border-radius: 5px; /* Zaoblení rohů na 5px */
+    background-color: #333;
+}
+
+
+.menu button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #000000, #9d20ad);
+    transition: background-color 0.3s ease; /* Plynulá změna barvy při najetí myší */
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu button:hover {
+    color: #000000;
+    text-decoration: none;
+}
+ 
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.menu ul li {
+    margin-right: 20px;
+}
+ 
+.menu a {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #000000, #9d20ad);
+    transition: background-color 0.3s ease;
+   
+}
+ 
+.menu a:hover { 
+    color: #000000;
+    text-decoration: none;
+}
+
+/*menu tlačítka upravení fontu*/
+nav {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease; /* Plynulá změna barvy při najetí myší */
+}
+
+.hero {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Kartičky */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between 5px;
+    justify-content: center;
+
+}
+
+.card {
+    width: 206px;
+    height: 309px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Zaoblení rohů */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Stín */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Přechod pro transformaci a stín */
+}
+.card {
+    border-radius: 10px; /* Zaoblení rohů */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Stín */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Přechod pro transformaci a stín */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Vystoupení kartičky */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); /* Zvětšený stín při najetí myší */
+}
+
+.card img {
+    width: 100%; /* Šířka obrázku 100% rámečku karty */
+    height: 100%; /* Výška obrázku 100% rámečku karty */
+    object-fit: cover; /* Obrázek se bude vyplňovat do rozměrů kontejneru bez zkreslení */
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white; /* Bílá barva textu */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Nastavení fontu */
+    font-size: 12px;
+    text-align: center; /* Zarovnání textu na střed */
+    transition: transform 0.3s ease;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em; /* Velikost fontu */
+}
+
+.card-link:hover .card-content {
+    transform: translateY(-10px); /* Posunutí textu o 10px nahoru při najetí myší */
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-background {
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9d20ad;
+    color: #fff;
+    border-radius: 8px;
+}
+
+

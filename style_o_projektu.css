@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0; /*odsazení*/
+    background: linear-gradient(to bottom, #000000, #9d20ad); /*Nastavuje přechod barev na pozadí. */
+    outline-color: #000000;
+    color: #333;
+}
+
+.hlavicka-container{
+    display: flex; /* Aktivuje flexbox layout pro daný prvek. */
+    flex-direction: row; /* Nastavuje směr hlavní osy na řádek . */
+    flex-wrap: nowrap; /* Určuje, že položky se nebudou zalamovat na nový řádek. */
+    justify-content: normal; /* Upraveno zarovnání položek podél hlavní osy. */
+    align-items: center; /* Zarovnává položky podél příčné osy. */
+    align-content: normal; /* Upraveno zarovnání více řádků uvnitř kontejneru. 'Normal' bude interpretováno kontextově. */
+    height: 200px; /* Nastavuje výšku kontejneru. */
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    align-self: center;
+    padding: 30px 0; /*vnitřní odsazení*/
+    margin: 0 auto;
+}
+
+.hlavicka {
+    max-width: 50%;
+    height: 200px;
+    padding-top: 180px; /*vnitřní odsazení od zhora*/
+    margin: 0 auto;
+    align-items: center;
+    display: block;
+}
+
+
+
+.menu label {
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+
+.menu input[type="text"] {
+    border-radius: 5px; /* Zaoblení rohů na 5px */
+    background-color: #333;
+}
+
+
+.menu button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #000000, #9d20ad);
+    transition: background-color 0.3s ease; /* Plynulá změna barvy při najetí myší */
+    color: #fff;
+    font-weight: bold;
+    padding: 10px; /*vnitřní odsazení*/
+}
+
+.menu button:hover {
+    color: #000000;
+    text-decoration: none;
+}
+ 
+.menu {
+    margin: 0;
+    padding: 0; /*vnitřní odsazení*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; /*vnitřní odsazení*/
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.menu ul li {
+    margin-right: 20px;
+}
+ 
+.menu a {
+    display: inline-block;
+    padding: 10px 15px; /*vnitřní odsazení*/
+    border-radius: 20px;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #000000, #9d20ad);
+    transition: background-color 0.3s ease;
+   
+}
+ 
+.menu a:hover { 
+    color: #000000;
+    text-decoration: none;
+}
+
+/*menu tlačítka upravení fontu*/
+nav {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /*Zarovnání textu do středu*/
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease; /* Plynulá změna barvy při najetí myší */
+}
+
+.hero {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.projekt {
+    color: #fff;
+    background-color: #000000;
+    text-align: center; /*Zarovnání textu do středu*/
+}
+
+h1 {
+    margin: 60px;
+    font-size: 2.5em;
+}
+
+footer {
+    text-align: center; /*Zarovnání textu do středu*/
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9d20ad;
+    color: #fff;
+    border-radius: 8px;
+}
